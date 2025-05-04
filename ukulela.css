@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #a8dadc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  /* Card Collection */
+  .card-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Card Styling */
+  .card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px; /* 3D perspective */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  /* Flip effect when hovered */
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side */
+    border-radius: 10px;
+  }
+  
+  /* Front side of the card */
+  .card-front {
+    background: #457b9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-front img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-back {
+    background-color: #fefae0;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+  }
+
+  
+
+  p{
+    text-align: center;
+    padding: 7px;
+  }
+  
