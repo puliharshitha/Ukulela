@@ -11,7 +11,6 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Container for all content */
 .container {
   text-align: center;
   width: 100%;
@@ -19,7 +18,6 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Card collection layout */
 .card-collection {
   display: flex;
   flex-wrap: wrap;
@@ -28,15 +26,13 @@ html, body {
   margin-top: 20px;
 }
 
-/* Each card container */
 .card {
   width: 250px;
   height: 350px;
-  perspective: 1000px; /* 3D perspective for flip */
+  perspective: 1000px; 
   position: relative;
 }
 
-/* Inner card for flip effect */
 .card-inner {
   width: 100%;
   height: 100%;
@@ -45,12 +41,11 @@ html, body {
   position: relative;
 }
 
-/* Flip on hover */
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front and back of the card */
+
 .card-front, .card-back {
   position: absolute;
   width: 100%;
@@ -60,7 +55,7 @@ html, body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Card front design */
+
 .card-front {
   background: #457b9d;
   display: flex;
@@ -74,7 +69,6 @@ html, body {
   border-radius: 10px;
 }
 
-/* Card back design */
 .card-back {
   background-color: #fefae0;
   transform: rotateY(180deg);
@@ -83,10 +77,8 @@ html, body {
   justify-content: center;  
   align-items: center;
   text-align: center;
-  padding: 20px;
 }
 
-/* Text styling */
 p {
   text-align: center;
   padding: 7px;
@@ -96,7 +88,6 @@ p {
   word-wrap: break-word;
 }
 
-/* Optional spacing at bottom */
 body::after {
   content: "";
   display: block;
